@@ -1,0 +1,27 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+posts.sort((a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime());
+---
+
+<Layout title="Blog - AnalytXpert" description="Profit intelligence insights for Shopify store owners.">
+  <div class="max-w-6xl mx-auto px-6 py-16">
+    <div class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">Blog</h1>
+      <p class="text-xl text-muted-foreground">Profit intelligence insights for Shopify store owners.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map(post => (
+        <a href={`/resources/blog/${post.slug}`} class="block p-6 bg-card rounded-xl border border-border hover:border-primary/50 transition-colors group">
+          <div class="text-sm text-muted-foreground mb-2">{post.data.date} &middot; {post.data.readTime}</div>
+          <h2 class="text-xl font-bold mb-3 group-hover:text-primary transition-colors">{post.data.title}</h2>
+          <p class="text-muted-foreground text-sm">{post.data.excerpt}</p>
+          <div class="mt-4 text-primary text-sm font-semibold">Read more &rarr;</div>
+        </a>
+      ))}
+    </div>
+  </div>
+</Layout>

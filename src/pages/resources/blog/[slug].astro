@@ -1,0 +1,47 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+
+<Layout title={`${post.data.title} - AnalytXpert`} description={post.data.excerpt}>
+  <div class="container max-w-3xl px-6 py-16">
+    <div class="mb-8">
+      <a href="/resources/blog" class="text-sm text-muted-foreground hover:text-primary transition-colors">&larr; Back to Blog</a>
+    </div>
+
+    <header class="mb-12">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">{post.data.title}</h1>
+      <div class="flex items-center gap-4 text-sm text-muted-foreground">
+        <span>{post.data.author}</span>
+        <span>&middot;</span>
+        <span>{post.data.date}</span>
+        <span>&middot;</span>
+        <span>{post.data.readTime}</span>
+      </div>
+    </header>
+
+    <div class="prose prose-lg prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-strong:text-foreground prose-a:text-primary prose-code:text-primary prose-pre:bg-secondary/50 prose-li:text-muted-foreground">
+      <Content />
+    </div>
+
+    <div class="mt-16 p-8 bg-primary/10 rounded-xl border border-primary/20 text-center">
+      <h2 class="text-2xl font-bold mb-4">Ready to find your profit leaks?</h2>
+      <p class="text-muted-foreground mb-6">Book a free 15-minute call and I'll show you exactly where your money is going.</p>
+      <a href="https://calendly.com/pracasrv/15min" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center justify-center h-11 px-8 text-sm font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors">
+        Book a Free Call
+      </a>
+    </div>
+  </div>
+</Layout>

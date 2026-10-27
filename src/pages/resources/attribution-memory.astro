@@ -1,0 +1,426 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Attribution Memory for Shopify - AnalytXpert" description="Make every Shopify order remember where it came from. No apps, no lock-in, no guesswork.">
+  <div class="min-h-screen bg-gradient-to-b from-background to-muted/20">
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 pt-20 pb-16 text-center">
+      <div class="max-w-4xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
+          Attribution Memory for Shopify Orders
+        </h1>
+        <p class="text-xl md:text-2xl text-muted-foreground mb-4">
+          Make every order remember where it came from — so your decisions aren't based on guesses, dashboards, or attribution models.
+        </p>
+        <p class="text-sm text-muted-foreground/80 mb-8">
+          Built for Shopify brands running paid traffic who want reliable order-level truth.
+        </p>
+        <a
+          href="/resources/attribution-memory-script-generator"
+          class="inline-flex items-center justify-center h-14 px-8 text-lg font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors mb-3"
+        >
+          Generate Attribution Memory Script
+        </a>
+        <p class="text-sm text-muted-foreground">
+          Takes ~2 minutes. No app installs. No lock-in.
+        </p>
+      </div>
+    </section>
+
+    <!-- The Problem Section -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+          Most Shopify stores lose attribution at the worst possible moment.
+        </h2>
+        <div class="prose prose-lg max-w-none text-muted-foreground space-y-4">
+          <p>You spend money to acquire a customer.</p>
+          <p>They browse, come back, click an ad again, maybe switch devices — and finally purchase.</p>
+          <p class="font-semibold text-foreground">At that moment, the most important context is lost.</p>
+
+          <div class="my-8 p-6 bg-muted/50 rounded-lg border border-border">
+            <p class="font-semibold text-foreground mb-3">What you're left with:</p>
+            <ul class="space-y-2 list-none pl-0">
+              <li>Conflicting dashboards</li>
+              <li>Channels taking credit they didn't earn</li>
+              <li>"ROAS looks fine, profit doesn't" conversations</li>
+            </ul>
+          </div>
+
+          <p class="text-foreground font-medium">The issue isn't your ads.</p>
+          <p class="text-foreground font-medium">It's that your orders don't remember their origin.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What is Attribution Memory Section -->
+    <section class="bg-muted/30 py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+            What is Attribution Memory?
+          </h2>
+          <div class="prose prose-lg max-w-none text-muted-foreground space-y-4">
+            <p>
+              Attribution Memory means storing acquisition context <span class="font-semibold text-foreground">inside the Shopify order itself</span> — permanently.
+            </p>
+
+            <div class="text-center space-y-2 my-6">
+              <p class="line-through">Not in GA4.</p>
+              <p class="line-through">Not in Meta.</p>
+              <p class="line-through">Not in a model that can change.</p>
+              <p class="text-2xl font-bold text-primary mt-4">On the order.</p>
+            </div>
+
+            <p>
+              So when you export, analyze, audit, or review performance months later, the truth is still there.
+            </p>
+
+            <div class="my-8 p-6 bg-background rounded-lg border border-primary/20">
+              <p class="font-semibold text-foreground mb-4">Each order remembers:</p>
+              <ul class="space-y-2 list-none pl-0">
+                <li>&#10003; UTM source, medium, campaign</li>
+                <li>&#10003; Click IDs (Google, Meta, etc.)</li>
+                <li>&#10003; Landing page context</li>
+                <li>&#10003; Session timestamp</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Visual Proof Section -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+          What this looks like in a real Shopify order
+        </h2>
+
+        <!-- Screenshot Grid -->
+        <div class="grid md:grid-cols-2 gap-6 mb-8">
+          <div class="rounded-lg overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow">
+            <img
+              src="/assets/Shopify-attribution-memory1.png"
+              alt="Shopify order showing first touch and last touch attribution data in Additional details"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow">
+            <img
+              src="/assets/Shopify-attribution-memory2.png"
+              alt="Attribution Memory captured in Shopify order attributes"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow">
+            <img
+              src="/assets/Shopify-attribution-memory3.png"
+              alt="UTM parameters and click IDs stored in Shopify order"
+              class="w-full h-auto"
+            />
+          </div>
+          <div class="rounded-lg overflow-hidden border border-border shadow-lg hover:shadow-xl transition-shadow">
+            <img
+              src="/assets/Shopify-attribution-memory4.png"
+              alt="Complete attribution tracking in Shopify Additional details"
+              class="w-full h-auto"
+            />
+          </div>
+        </div>
+
+        <div class="text-center">
+          <p class="text-lg font-semibold text-foreground mb-4">
+            This data is attached to the order — not inferred later.
+          </p>
+          <div class="inline-block text-left space-y-2">
+            <p class="text-muted-foreground">Once it's there:</p>
+            <ul class="space-y-1 text-muted-foreground list-none pl-0">
+              <li>&bull; Refunds don't break it</li>
+              <li>&bull; Exports don't lose it</li>
+              <li>&bull; Attribution models don't overwrite it</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why This Changes Things Section -->
+    <section class="bg-muted/30 py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-3xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+            Why this changes how you read your business
+          </h2>
+          <div class="prose prose-lg max-w-none text-muted-foreground space-y-6">
+            <p>When orders remember their origin, conversations change.</p>
+
+            <div class="grid md:grid-cols-2 gap-6 my-8">
+              <div class="p-6 bg-background/50 rounded-lg border border-border">
+                <p class="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-destructive" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  You stop asking:
+                </p>
+                <p class="text-muted-foreground italic">"Which dashboard is right?"</p>
+              </div>
+
+              <div class="p-6 bg-primary/5 rounded-lg border border-primary/20">
+                <p class="font-semibold text-foreground mb-3 flex items-center gap-2">
+                  <svg class="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  You start asking:
+                </p>
+                <ul class="space-y-2 text-sm list-none pl-0">
+                  <li>"Which channels bring repeat buyers?"</li>
+                  <li>"Which products only work on certain channels?"</li>
+                  <li>"Where are we losing money before checkout?"</li>
+                </ul>
+              </div>
+            </div>
+
+            <p class="text-center text-foreground font-medium text-xl">
+              Attribution Memory doesn't give answers by itself —<br />
+              it gives you data you can finally trust.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold mb-8 text-center">
+          How Attribution Memory works (high level)
+        </h2>
+
+        <div class="space-y-8 mb-12">
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl">
+              1
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Capture early</h3>
+              <p class="text-muted-foreground">
+                Attribution parameters are captured when a visitor lands or adds to cart.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl">
+              2
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Persist through checkout</h3>
+              <p class="text-muted-foreground">
+                The data stays with the user through checkout — even if they return later.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-6">
+            <div class="flex-shrink-0 w-12 h-12 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold text-xl">
+              3
+            </div>
+            <div>
+              <h3 class="text-xl font-semibold mb-2">Store on the order</h3>
+              <p class="text-muted-foreground">
+                Once the order is created, the attribution is saved as order note attributes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center space-y-2 text-muted-foreground">
+          <p>No dashboards.</p>
+          <p>No plugins.</p>
+          <p>No ongoing maintenance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Video Section -->
+    <section class="bg-muted/30 py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 text-center">
+            Get it all set up in under 2 minutes
+          </h2>
+          <p class="text-center text-muted-foreground mb-8">
+            Watch how simple it is to install the Attribution Memory script in your Shopify store
+          </p>
+
+          <!-- Installation Steps -->
+          <div class="mb-8 p-6 bg-background rounded-lg border border-border">
+            <h3 class="text-lg font-semibold text-foreground mb-4">Installation Steps:</h3>
+            <ol class="space-y-3 text-sm text-muted-foreground mb-6">
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">1.</span>
+                <span>In Shopify, go to <strong>Online Store &rarr; Themes</strong></span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">2.</span>
+                <span>Click the 3 vertical dots next to your current theme and choose <strong>'Edit Code'</strong></span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">3.</span>
+                <span>This will open a new tab</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">4.</span>
+                <span>Right-click on the <strong>Assets</strong> folder and choose <strong>'Add a new asset'</strong></span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">5.</span>
+                <span>Upload the script file you downloaded</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">6.</span>
+                <span>Click on <strong>Layout</strong> folder &rarr; <strong>theme.liquid</strong> file</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">7.</span>
+                <span>Scroll to find <code class="bg-muted px-1.5 py-0.5 rounded text-xs">&lt;/head&gt;</code></span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">8.</span>
+                <span>Create a new line <strong>before</strong> <code class="bg-muted px-1.5 py-0.5 rounded text-xs">&lt;/head&gt;</code></span>
+              </li>
+              <li class="flex gap-3">
+                <span class="font-semibold text-foreground">9.</span>
+                <span>Paste the code below (replace the filename with your downloaded script name)</span>
+              </li>
+            </ol>
+
+            <div class="bg-muted/50 rounded p-4 font-mono text-sm overflow-x-auto">
+              <code class="text-foreground">
+                {"{{ 'replace-with-the-name-of-your-script-file.js' | asset_url | script_tag }}"}
+              </code>
+            </div>
+            <p class="text-xs text-muted-foreground mt-2">
+              Example: If your file is named <code class="bg-muted px-1 rounded">utm-tracker.js</code>, use <code class="bg-muted px-1 rounded">{"{{ 'utm-tracker.js' | asset_url | script_tag }}"}</code>
+            </p>
+          </div>
+
+          <div class="rounded-lg overflow-hidden border border-border shadow-xl bg-background aspect-video">
+            <iframe
+              class="w-full h-full"
+              src="https://www.youtube.com/embed/Hiee_KFeajE"
+              title="How to Install Attribution Memory Script"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Who This Is For Section -->
+    <section class="bg-muted/30 py-16">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <h2 class="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Who this is for
+          </h2>
+
+          <div class="grid md:grid-cols-2 gap-8">
+            <div class="p-8 bg-primary/5 rounded-lg border border-primary/20">
+              <h3 class="text-2xl font-semibold mb-6 text-primary flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                For
+              </h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-2">
+                  <span class="text-primary mt-1">&#10003;</span>
+                  <span>Shopify brands running paid ads</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary mt-1">&#10003;</span>
+                  <span>Founders who want clarity, not vanity metrics</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-primary mt-1">&#10003;</span>
+                  <span>Teams doing SKU, channel, or profit analysis</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="p-8 bg-background/50 rounded-lg border border-border">
+              <h3 class="text-2xl font-semibold mb-6 text-muted-foreground flex items-center gap-2">
+                <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                Not for
+              </h3>
+              <ul class="space-y-3 text-muted-foreground">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1">&#10007;</span>
+                  <span>Stores not running traffic</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1">&#10007;</span>
+                  <span>People looking for "better ROAS screenshots"</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1">&#10007;</span>
+                  <span>One-off reporting fixes</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Generate Script Section -->
+    <section class="container mx-auto px-4 py-16">
+      <div class="max-w-3xl mx-auto text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">
+          Generate your Attribution Memory script
+        </h2>
+        <div class="prose prose-lg max-w-none text-muted-foreground mb-8 space-y-4">
+          <p>
+            We've built a simple generator that creates a Shopify-ready script based on your needs.
+          </p>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center my-6">
+            <span class="text-foreground">No apps to install</span>
+            <span class="hidden sm:inline text-muted-foreground/50">&bull;</span>
+            <span class="text-foreground">No lock-in</span>
+            <span class="hidden sm:inline text-muted-foreground/50">&bull;</span>
+            <span class="text-foreground">You control the data</span>
+          </div>
+
+          <p class="text-xl font-semibold text-foreground">Takes ~2 minutes.</p>
+        </div>
+
+        <a
+          href="/resources/attribution-memory-script-generator"
+          class="inline-flex items-center justify-center h-14 px-8 text-lg font-medium bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors mb-3"
+        >
+          Generate Attribution Memory Script
+        </a>
+
+        <p class="text-sm text-muted-foreground mb-4">
+          Takes ~2 minutes. No app installs. No lock-in.
+        </p>
+
+        <p class="text-sm text-muted-foreground/80">
+          This is the foundation for deeper analysis — not the end goal.
+        </p>
+      </div>
+    </section>
+
+    <!-- Soft Close Section -->
+    <section class="bg-muted/30 py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-2xl mx-auto text-center">
+          <p class="text-lg text-muted-foreground italic">
+            Once orders remember where they came from, the next step is learning how to read what they're telling you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+</Layout>
